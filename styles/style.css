@@ -1,0 +1,201 @@
+
+/* VARIÁVEIS */
+:root{
+    --cor-primaria: ;
+    --cor-secundaria: ;
+    --background-primaria: #FFFFFF;
+    --background-secundaria: #5300C8;
+    --background-terciaria: #03318C;
+    --fonte-primaria: "Press Start 2P", system-ui;
+    --fonte-secundaria: "IBM Plex Mono", monospace;
+    --cor-fonte-primaria: #E5E5E5;
+    --cor-fonte-secundaria: #000000;
+    --cor-fonte-terciaria: #03318C;
+    --cor-borda: #03318C;
+}
+
+body{
+    background-color: var(--back-ground-color);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    height: 96px;
+    background-color: var(--background-secundaria);
+    font-family: var(--fonte-primaria);
+    align-items: center;
+    color: var(--cor-fonte-primaria);
+    font-size: 24px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.container-principal{
+    display: flex;
+    gap: 10%;
+    margin: 0 5%;
+    justify-content: center;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 678px;
+    box-shadow: -12px 10px 5.8px 0px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+
+}
+
+.produtos__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.produtos__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.produtos__card{
+    background-color: var(--background-secundaria);
+    border: solid 3px #000000;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--cor-fonte-primaria);
+    margin-bottom: 78px; 
+}
+
+.produtos__card__info__preco{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.produtos__card__info__preco span{
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+
+.add-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.add-produto__titulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.add-produto__form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.add-produto__campo{
+    border: solid 3px rgba(3, 49, 140, 1);
+    border-radius: 32px;
+    height: 58px;
+    width: 392px;
+}
+
+.add-produto__campo::placeholder{
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--cor-fonte-terciaria);
+    padding-left: 5%;
+}
+
+.add-produto__container-btns{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.add-produto__container-btns__btn__submit{
+    background-color: var(--background-terciaria);
+    width: 188px;
+    height: 55px;
+    border-radius: 15px;
+    color: var(--cor-fonte-primaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid var(--cor-borda);
+}
+
+.add-produto__container-btns__btn__clear{
+    background-color: var(--background-primaria);
+    width: 188px;
+    height: 55px;
+    border-radius: 15px;
+    color: var(--cor-fonte-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid var(--cor-borda);
+}
+
+.rodape{
+    height: 232px;
+    background-color: var(--background-secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.rodape__text{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--background-primaria);
+}
+
+.rodape__sub-text{
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cor-fonte-primaria);
+    margin-bottom: 10px;
+}
+
+.rodape__container__text{
+    display: flex;
+    align-items: center;
+}
+
+.rodape span {
+    font-family: var(--fonte-secundaria);
+    font-weight: 200;
+    font-size: 16px;
+    color: var(--cor-fonte-primaria);
+}
+
