@@ -30,7 +30,7 @@ body{
     font-family: var(--fonte-primaria);
     align-items: center;
     color: var(--cor-fonte-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     justify-content: center;
 }
@@ -54,7 +54,7 @@ body{
 
 .produtos__titulo{
     font-family: var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
     margin-bottom: 40px;
@@ -74,7 +74,7 @@ body{
     border-radius: 10px;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -90,7 +90,7 @@ body{
 
 .produtos__card__info__preco span{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     
 }
 
@@ -104,7 +104,7 @@ body{
 .add-produto__titulo{
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -124,7 +124,7 @@ body{
 .add-produto__campo::placeholder{
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--cor-fonte-terciaria);
     padding-left: 5%;
 }
@@ -143,7 +143,7 @@ body{
     color: var(--cor-fonte-primaria);
     font-family: var(--fonte-secundaria);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     border: 3px solid var(--cor-borda);
 }
@@ -156,7 +156,7 @@ body{
     color: var(--cor-fonte-terciaria);
     font-family: var(--fonte-secundaria);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     border: 3px solid var(--cor-borda);
 }
@@ -175,14 +175,14 @@ body{
 .rodape__text{
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--background-primaria);
 }
 
 .rodape__sub-text{
     font-family: var(--fonte-secundaria);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--cor-fonte-primaria);
     margin-bottom: 10px;
 }
@@ -195,7 +195,19 @@ body{
 .rodape span {
     font-family: var(--fonte-secundaria);
     font-weight: 200;
-    font-size: 16px;
+    font-size: 1.5rem;
     color: var(--cor-fonte-primaria);
 }
 
+@media(max-width: 1030px){
+  main{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .add-produto{
+    margin-bottom: 10%;
+  }
+}
