@@ -118,7 +118,7 @@ body{
     border: solid 3px rgba(3, 49, 140, 1);
     border-radius: 32px;
     height: 58px;
-    width: 392px;
+    max-width: 392px;
 }
 
 .add-produto__campo::placeholder{
@@ -208,7 +208,16 @@ body{
     margin: 0 0 5% 5%;
   }
 
-  .add-produto{
-    margin-bottom: 10%;
+  .produtos__card{
+    flex: 0 1 auto;
   }
+
+  .add-produto{
+    margin-bottom: 15%;
+  }
+
+  .add-produto__campo{
+    flex: 0 1 auto;
+  }
+  
 }
