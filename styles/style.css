@@ -204,7 +204,8 @@ body{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 40px;
+    justify-content: space-around;
+    margin: 0 0 5% 5%;
   }
 
   .add-produto{
