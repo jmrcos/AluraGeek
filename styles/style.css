@@ -208,16 +208,24 @@ body{
     margin: 0 0 5% 5%;
   }
 
-  .produtos__card{
-    flex: 0 1 auto;
+  .produtos{
+    margin-top: 50px;
+    box-shadow: none;
+    
+  }  
+
+  .produtos__container{
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .add-produto{
-    margin-bottom: 15%;
+  .produtos__card{
+    flex: 0 1 auto;
+    width: auto;
+
   }
 
   .add-produto__campo{
     flex: 0 1 auto;
   }
-  
 }
