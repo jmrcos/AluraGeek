@@ -18,9 +18,9 @@
     <main class="container-principal">
         <section class="produtos">
             <h1 class="produtos__titulo">MEUS PRODUTOS</h1>
-            <div class="produtos__container">
+            <div data-products class="produtos__container">
 
-                <div class="produtos__card">
+                <!-- <div class="produtos__card">
                     <img class="produtos__card__imagem" src="./assets/produto-1.svg" alt="Imagem do produto">
                     <div class="produtos__card__info">
                         <h2 class="produtos__card__info__nome">Stormtrooper</h2>
@@ -118,7 +118,7 @@
                             <img src="./assets/icone-deletar.svg" alt='Ícone de deletar'>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
@@ -126,10 +126,10 @@
 
         <section class="add-produto">
             <h1 class="add-produto__titulo">ADCIONAR PRODUTO:</h1>
-            <form class="add-produto__form">
-                <input class="add-produto__campo nome" type="text" placeholder="nome...">
-                <input class="add-produto__campo valor" type="number" placeholder="valor...">
-                <input class="add-produto__campo imagem" type="url" placeholder="imagem...">
+            <form data-form class="add-produto__form">
+                <input data-name class="add-produto__campo nome" type="text" placeholder="nome...">
+                <input data-price class="add-produto__campo valor" type="number" placeholder="valor...">
+                <input data-image class="add-produto__campo imagem" type="url" placeholder="imagem...">
 
                 <div class="add-produto__container-btns">
                     <input class="add-produto__container-btns__btn__submit" type="submit" value="Adicionar">
@@ -146,5 +146,6 @@
         <h2 class="rodape__sub-text">DESENVOLVIDO POR JOÃO MARCOS</h2>
         <span class="rodape__copyright">ALURA LATAM - 2024</span>
     </footer>
+    <script type="module" src="./js/controllers/main.js"></script>
 </body>
 </html>

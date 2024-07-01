@@ -64,10 +64,12 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 0 3%;
 }
 
 .produtos__card{
+    width: 20%;
     background-color: var(--background-secundaria);
     border: solid 3px #000000;
     padding: 10px;
@@ -77,9 +79,11 @@ body{
     font-size: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
     color: var(--cor-fonte-primaria);
     margin-bottom: 78px; 
+    flex: 0 1 auto;
 }
 
 .produtos__card__info__preco{
@@ -92,6 +96,11 @@ body{
     font-weight: 700;
     font-size: 1rem;
     
+}
+
+.delete-button{
+    background-color: var(--background-secundaria);
+    border: none;
 }
 
 .add-produto{
@@ -119,6 +128,12 @@ body{
     border-radius: 32px;
     height: 58px;
     max-width: 392px;
+    text-align: left;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    color: var(--cor-fonte-terciaria);
+    padding-left: 5%;
+    font-size: 1rem;
 }
 
 .add-produto__campo::placeholder{
@@ -126,7 +141,6 @@ body{
     font-weight: 600;
     font-size: 1rem;
     color: var(--cor-fonte-terciaria);
-    padding-left: 5%;
 }
 
 .add-produto__container-btns{
@@ -221,7 +235,7 @@ body{
 
   .produtos__card{
     flex: 0 1 auto;
-    width: auto;
+    width: 20%;
 
   }
 
