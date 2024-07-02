@@ -101,6 +101,7 @@ body{
 .delete-button{
     background-color: var(--background-secundaria);
     border: none;
+    cursor: pointer;
 }
 
 .add-produto{

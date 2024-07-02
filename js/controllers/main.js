@@ -3,6 +3,7 @@ import { servicesProducts } from "../services/product-services.js";
 const productContainer = document.querySelector('[data-products]');
 const form = document.querySelector('[data-form]');
 
+
 function createElement(nome, preco, imagem, id){
     const card = document.createElement('div'); 
     card.classList.add('produtos__card');
@@ -13,7 +14,7 @@ function createElement(nome, preco, imagem, id){
             <h2 class="produtos__card__info__nome">${nome}</h2>
             <div class="produtos__card__info__preco">
                 <span>$${preco},00</span>
-                <button class="delete-button" data-id="${id}">
+                <button class="delete-button" data-excluir id="${id}">
                     <img src="./assets/icone-deletar.svg" alt='Ícone de deletar'>
                 </button>           
         </div>
@@ -49,4 +50,17 @@ form.addEventListener('submit', (event) => {
     
 })
 
+
+const btns = document.querySelectorAll("[data-excluir]")
+btns.forEach(btn => {
+    btn.addEventListener("click", async(evento) => {
+        evento.preventDefault();
+        await servicesProducts.deleteProduct(btn.id);
+        console.log(btn)
+        
+})})
+
+
+
 render();
+ 

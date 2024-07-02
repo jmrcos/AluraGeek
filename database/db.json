@@ -1,18 +1,6 @@
 {
   "produtos": [
     {
-      "nome": "Darth Vader",
-      "preco": "50",
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_975969-MLA46467090682_062021-O.webp",
-      "id": "1"
-    },
-    {
-      "nome": "Flash",
-      "preco": "25",
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_643523-MLA49180554005_022022-O.webp",
-      "id": "2"
-    },
-    {
       "nome": "Batman",
       "preco": "35",
       "imagem": "https://http2.mlstatic.com/D_NQ_NP_640262-MCO47330060660_092021-O.webp",
@@ -25,16 +13,28 @@
       "imagem": "https://th.bing.com/th/id/R.5704edb305f19e37f15b7c53d949bed9?rik=OjpV9tnnVfp8qA&pid=ImgRaw&r=0"
     },
     {
-      "id": "809f",
-      "nome": "Cleide",
-      "preco": "99",
-      "imagem": "https://th.bing.com/th/id/R.8f75edc05c50c7481272e75df74bf8d2?rik=0nVC06LswwrUgw&pid=ImgRaw&r=0"
-    },
-    {
       "id": "61a0",
       "nome": "Groot",
       "preco": "120",
       "imagem": "https://th.bing.com/th/id/OIP.dySW3vZoX2_AUue4f864mwHaHa?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "59aa",
+      "nome": "Darth Vader",
+      "preco": "50",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_975969-MLA46467090682_062021-O.webp"
+    },
+    {
+      "id": "c433",
+      "nome": "Flash",
+      "preco": "25",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_643523-MLA49180554005_022022-O.webp"
+    },
+    {
+      "id": "16b6",
+      "nome": "Iron Man",
+      "preco": "50",
+      "imagem": "https://th.bing.com/th/id/R.3fcecb934eea1e911a93e23f853aba0d?rik=%2bz2foHWJ0RjAAw&pid=ImgRaw&r=0"
     }
   ]
 }
