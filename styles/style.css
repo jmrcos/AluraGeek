@@ -236,8 +236,8 @@ body{
 
   .produtos__card{
     flex: 0 1 auto;
-    width: 20%;
-
+    width: 38%;
+    box-sizing: border-box;
   }
 
   .add-produto__campo{

@@ -18,12 +18,11 @@ const createProduct = (nome, preco, imagem) => {
     })
     .then((resposta) => resposta.json())
     .then((erro) => console.log(erro));
-
 }
 
 const deleteProduct = async (id) => {
     try {
-        const response = await fetch(`http://localhost:3000/produtos/${id}`, {
+        const response = await fetch(`https://my-json-server.typicode.com/jmrcos/alura-geek-api/produtos/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -31,7 +30,7 @@ const deleteProduct = async (id) => {
         });
 
         if (response.ok) {
-            console.log('Produto excluído com sucesso!');
+            alert('Produto excluído com sucesso!');
         } else {
             console.error('Erro ao excluir o produto:', response.status);
         }

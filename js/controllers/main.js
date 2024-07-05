@@ -2,7 +2,7 @@ import { servicesProducts } from "../services/product-services.js";
 
 const productContainer = document.querySelector('[data-products]');
 const form = document.querySelector('[data-form]');
-
+const btnLimpar = document.querySelector('.add-produto__container-btns__btn__clear');
 
 function createElement(nome, preco, imagem, id){
     const card = document.createElement('div'); 
@@ -14,12 +14,21 @@ function createElement(nome, preco, imagem, id){
             <h2 class="produtos__card__info__nome">${nome}</h2>
             <div class="produtos__card__info__preco">
                 <span>$${preco},00</span>
-                <button class="delete-button" data-excluir id="${id}">
+                <button class="delete-button" data-id id="${id}">
                     <img src="./assets/icone-deletar.svg" alt='Ícone de deletar'>
                 </button>           
         </div>
     `
     productContainer.appendChild(card);
+
+    const btns = document.querySelectorAll("[data-id]")
+
+    btns.forEach(btn => {btn.addEventListener('click', (e) => {
+        e.preventDefault()
+        servicesProducts.deleteProduct(id);
+        btn.closest('.produtos__card').remove();
+    })});
+
     return card;
 }
 
@@ -47,20 +56,24 @@ form.addEventListener('submit', (event) => {
         .createProduct(nome, preco, imagem)
         .then((res) => console.log(res))
         .catch((err) => console.log(err));
+
+    alert('Produto adcionado com sucesso!')
     
 })
 
+btnLimpar.addEventListener('click', event => {
+    event.preventDefault()
+    const nome = document.querySelector('[data-name]').value;
+    const preco = document.querySelector('[data-price]').value;
+    const imagem = document.querySelector('[data-image]').value;
 
-const btns = document.querySelectorAll("[data-excluir]")
-btns.forEach(btn => {
-    btn.addEventListener("click", async(evento) => {
-        evento.preventDefault();
-        await servicesProducts.deleteProduct(btn.id);
-        console.log(btn)
-        
-})})
+    nome.value = '';
+    preco.value = '';
+    imagem.value ='';
 
-
+})
 
 render();
  
+
+

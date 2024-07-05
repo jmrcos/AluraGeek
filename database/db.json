@@ -31,6 +31,24 @@
       "imagem": "https://http2.mlstatic.com/D_NQ_NP_643523-MLA49180554005_022022-O.webp"
     },
     {
+      "id": "a2cf",
+      "nome": "Cleide",
+      "preco": "39",
+      "imagem": "https://th.bing.com/th/id/R.5c73b95d5675f8b02f3b06897c975316?rik=5jExHYJiqlULMw&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "695e",
+      "nome": "Hulk",
+      "preco": "45",
+      "imagem": "https://cdn.shopify.com/s/files/1/2393/5817/products/5aa3d553-4ea3-4260-95c5-b77911e52992_1400x.jpg?v=1525278681"
+    },
+    {
+      "id": "f728",
+      "nome": "Ashoka",
+      "preco": "34",
+      "imagem": "https://m.media-amazon.com/images/I/71Td0CPs2GL.jpg"
+    },
+    {
       "id": "16b6",
       "nome": "Iron Man",
       "preco": "50",
