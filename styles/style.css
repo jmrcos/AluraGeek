@@ -236,11 +236,21 @@ body{
 
   .produtos__card{
     flex: 0 1 auto;
-    width: 38%;
+    width: 40%;
     box-sizing: border-box;
   }
 
+}
+
+@media(max-width: 500px){
+ 
   .add-produto__campo{
-    flex: 0 1 auto;
+    width: 70%;
+    align-self: center;
+  }
+
+  .add-produto__container-btns{
+    width: 75%;
+    align-self: center;
   }
 }

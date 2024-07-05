@@ -61,17 +61,13 @@ form.addEventListener('submit', (event) => {
     
 })
 
-btnLimpar.addEventListener('click', event => {
-    event.preventDefault()
-    const nome = document.querySelector('[data-name]').value;
-    const preco = document.querySelector('[data-price]').value;
-    const imagem = document.querySelector('[data-image]').value;
+function limparCampos(){
+    const nome = document.querySelector('[data-name]').value='';
+    const preco = document.querySelector('[data-price]').value='';
+    const imagem = document.querySelector('[data-image]').value='';
+}
 
-    nome.value = '';
-    preco.value = '';
-    imagem.value ='';
-
-})
+btnLimpar.addEventListener('click', limparCampos)
 
 render();
  
